@@ -35,8 +35,9 @@ const selectorIsp = document.getElementById("isp");
 const addElement = (text, parent) => {
     const tag = document.createElement("p");
     const textNode = document.createTextNode(text);
+    const oldP = parent.querySelector("p");
     tag.appendChild(textNode);
-    parent.appendChild(tag);
+    parent.replaceChild(tag, oldP);
 };
 
 const getData = async (ip) => {
