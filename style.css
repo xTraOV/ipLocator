@@ -1,0 +1,162 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("./images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+}
+
+.header h1 {
+  font-size: large;
+  margin-top: 15px;
+}
+
+.header .input {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0px;
+}
+
+.header .input .input_field, .header .input .input_submit {
+  padding: 0;
+  border-width: 0px;
+  height: 50px;
+}
+
+.header .input .input_field {
+  border-radius: 10px 0 0 10px;
+  width: 300px;
+}
+
+.header .input .input_submit {
+  border-radius: 0 10px 10px 0;
+  width: 50px;
+  background-color: black;
+}
+
+.info {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: white;
+  height: 200px;
+  width: 80%;
+  border-radius: 20px;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.info .ip, .info .location, .info .timezone, .info .isp {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info .ip span, .info .location span, .info .timezone span, .info .isp span {
+  margin-top: 20px;
+}
+
+.info .ip p, .info .location p, .info .timezone p, .info .isp p {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.info .ip {
+  border-right: 1px solid black;
+}
+
+.info .location {
+  border-right: 1px solid black;
+}
+
+.info .timezone {
+  border-right: 1px solid black;
+}
+
+#map {
+  z-index: 2;
+  height: 800px;
+}
+/*# sourceMappingURL=style.css.map */
